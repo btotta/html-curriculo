@@ -1,0 +1,176 @@
+:root {
+    --primary-color: black;
+    --white-color: #ffff;
+    --gap: 3rem;
+    --light-gray-color: #ccc7c7d5;
+    --secondery-color: #8d1c97;
+    --light-blue-color: rgba(56, 59, 243, 0.933);
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    color: var(--primary-color);
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 2rem;
+
+}
+
+h2 {
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 5rem;
+}
+
+h4 {
+    font-size: 4.5rem;
+}
+
+h5 {
+    font-size: 3rem;
+    
+}
+
+h6 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.main-bg {
+    background-image: url('../img/mainbg.svg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: #8d1c97 solid 0.1rem;
+    background-color: var(--white-color);
+
+    
+}
+
+.menu-content {
+    overflow: hidden;
+}
+
+.menu h1 {
+    margin: 0;
+    float: left;
+    padding: 1rem;
+}
+
+.menu nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+/* .menu ul li {
+    padding: 1rem;
+} */
+
+.menu ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    /* padding: 1rem; */
+    display: block;
+    padding: 1rem;
+    position: relative;
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0%;
+    height: 0.2rem;
+    background: var(--secondery-color);
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.spacing {
+    margin: 2rem;
+}
+
+.menu-spacing {
+    display: flex;
+    padding-top: 6rem;
+}
+
+/* .experiencias {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+} */
+
+.main-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 120rem;
+    min-height: 100vh;
+
+
+}
+
+.resumo p {
+    text-align: left;
+}
+
+.footer {
+    bottom: 0;
+}
