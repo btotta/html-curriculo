@@ -2,9 +2,8 @@
     --primary-color: black;
     --white-color: #ffff;
     --gap: 3rem;
-    --light-gray-color: #ccc7c7d5;
-    --secondery-color: #8d1c97;
-    --light-blue-color: rgba(56, 59, 243, 0.933);
+    --light-gray-color: #cecbcb;
+    --secondery-color: #7c3783;
 
 }
 
@@ -18,7 +17,6 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
-
 
 body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -75,7 +73,7 @@ a {
     right: 0;
     width: 100%;
     z-index: 1;
-    border-bottom: #8d1c97 solid 0.1rem;
+    border-bottom: var(--secondery-color) solid 0.2rem;
     background-color: var(--white-color);
 }
 
@@ -159,7 +157,8 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-width: 120rem;
+    min-width: 80%;
+    max-width: 80%;
     min-height: 100vh;
 }
 
@@ -167,9 +166,25 @@ a {
     text-align: left;
 }
 
-.footer {
-    bottom: 0;
+.resumo p::first-letter {
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-left: 5rem;
 }
+
+.footer {
+    display: flex;
+    flex-direction: row;    
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.github {
+    padding: 0 2rem 0 2rem;
+}
+
 
 .close-menu {
     display: none;
@@ -249,9 +264,13 @@ a {
         display: block;
     }
 
+    .info-mobile {
+        text-align: left;
 
+    }
 
-
-
-
+    .info-mobile::first-letter{
+        padding-left: 2rem;
+        font-weight: bold;
+    }
 }
