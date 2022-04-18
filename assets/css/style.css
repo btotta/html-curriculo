@@ -137,10 +137,6 @@ a {
     margin: 2rem;
 }
 
-.menu-spacing {
-    display: flex;
-    padding-top: 6rem;
-}
 
 /* .experiencias {
     display: flex;
@@ -169,7 +165,7 @@ a {
 .resumo p::first-letter {
     font-size: 2.5rem;
     font-weight: bold;
-    padding-left: 5rem;
+    padding-left: 3rem;
 }
 
 .footer {
@@ -190,9 +186,13 @@ a {
     display: none;
 }
 
+.menu-spacing  {
+    display: none;
+}
+
 .back-to-top {
     position: fixed;
-    bottom: 2rem;
+    bottom: 5rem;
     right: 2rem;
     background: var(--white-color);
     width: 5rem;
@@ -231,8 +231,9 @@ a {
     .menu-content {
         height: 100vh;
     }
-
+    
     .menu {
+        padding-top: 5rem;
         display: none;
     }
 
@@ -273,4 +274,10 @@ a {
         padding-left: 2rem;
         font-weight: bold;
     }
+
+    .menu-spacing {
+        display: block;
+        padding: 3rem;
+    }
+
 }
